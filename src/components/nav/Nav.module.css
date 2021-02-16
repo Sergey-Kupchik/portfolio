@@ -1,0 +1,15 @@
+.nav {
+    border: 1px solid;
+    background-color: cyan;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+@media (min-width: 480px) {
+    .nav {
+        width: 300px;
+        justify-content: space-between;
+        margin-right: 10%;
+    }
+}
