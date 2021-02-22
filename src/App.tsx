@@ -4,7 +4,10 @@ import './App.css';
 import {Header} from './components/header/Header';
 import {Main} from './components/main/Main';
 import {Nav} from './components/nav/Nav';
-import { MySkills } from './components/skills/MySkills';
+import {MySkills} from './components/skills/MySkills';
+import {MyWorks} from './components/myWorks/MyWorks';
+import {ContactForm} from './components/contactForm/ContactForm';
+import { Footer } from './components/footer/Footer';
 
 function App() {
     return (
@@ -12,6 +15,9 @@ function App() {
             <Header/>
             <Main/>
             <MySkills/>
+            <MyWorks/>
+            <ContactForm/>
+            <Footer/>
         </div>
     );
 }

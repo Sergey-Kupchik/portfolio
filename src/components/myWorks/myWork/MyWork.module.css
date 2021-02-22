@@ -1,0 +1,67 @@
+
+.myWorkContainer {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 8px 0;
+}
+
+
+.myWorkLogo {
+    width: 300px;
+    height: 300px;
+    background-image: url('https://assets-eu-1.generation-y.net/M4FZ0R07z1x6oSuI-D9WQn5b60M=/350x300/assets-generation-y.s3.amazonaws.com/pinewood/uploads/asset/data/1832/IMG_8038.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url('https://assets-eu-1.generation-y.net/M4FZ0R07z1x6oSuI-D9WQn5b60M=/350x300/assets-generation-y.s3.amazonaws.com/pinewood/uploads/asset/data/1832/IMG_8038.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.myWorkLogo a {
+    color: white;
+    font-size: 150%;
+    display: block;
+    text-decoration: none;
+}
+.myWorkInfo {
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myWorkInfo span {
+    text-align: center;
+    margin: 0 3px;
+}
+
+
+@media (min-width: 768px) {
+    .myWorkContainer {
+        max-width: 300px;
+        margin: 8px;
+    }
+    .myWorkLogo  {
+        background-image: url('https://assets-eu-1.generation-y.net/M4FZ0R07z1x6oSuI-D9WQn5b60M=/350x300/assets-generation-y.s3.amazonaws.com/pinewood/uploads/asset/data/1832/IMG_8038.jpg');
+    }
+    .myWorkLogo a {
+        display: none;
+    }
+
+    .myWorkLogo:hover {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url('https://assets-eu-1.generation-y.net/M4FZ0R07z1x6oSuI-D9WQn5b60M=/350x300/assets-generation-y.s3.amazonaws.com/pinewood/uploads/asset/data/1832/IMG_8038.jpg')
+    }
+
+    .myWorkLogo:hover a {
+        color: white;
+        font-size: 150%;
+        display: block;
+        text-decoration: none;
+    }
+
+}

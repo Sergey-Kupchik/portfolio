@@ -9,7 +9,7 @@ export const MySkills = () => {
         {
             name: 'React',
             logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam architecto atque illo sapiente totam!'
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. consectetur adipisicing elit. Adipisci aliquam architecto atque illo sapiente!'
         },
         {
             name: 'Redux',

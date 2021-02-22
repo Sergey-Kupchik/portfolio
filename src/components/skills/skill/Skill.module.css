@@ -5,13 +5,12 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0;
-    margin-bottom: 8px;
+    margin: 8px 0;
 }
 
 .skillLogo img {
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     background-color: white;
 }
 

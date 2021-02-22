@@ -1,0 +1,67 @@
+
+.container {
+    background-color: rgb(37, 42, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    margin: 8px 0;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 2px;
+}
+
+.icon {
+    color: white;
+    size: 5.1rem;
+    margin: 2px 0;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.info h3 {
+    color: white;
+    margin: 2px;
+}
+.info h3:hover {
+text-decoration:underline  ;
+}
+
+
+.info span {
+    color: rgba(255, 255, 255, .5);
+    margin: 2px 0;
+}
+
+
+/*.skillLogo img {*/
+/*    height: 200px;*/
+/*    width: 200px;*/
+/*    background-color: white;*/
+/*}*/
+
+/*.skillInfo {*/
+/*    background-color: cornsilk;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.skillInfo span {*/
+/*    text-align: center;*/
+/*    margin: 0 3px;*/
+/*}*/
+
+
+/*@media (min-width: 768px) {*/
+/*    .skillContainer {*/
+/*        max-width: 300px;*/
+/*        margin: 8px;*/
+/*    }*/
+/*}*/
