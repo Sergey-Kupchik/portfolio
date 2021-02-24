@@ -2,72 +2,105 @@
 @import "./../common/variables";
 
 .wrapper {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);;
   background-color: $backgroundColorPrimary;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include displayFlex(row, center, center);
+  flex-wrap: wrap;
+  .mouseWrap {
+    align-self: flex-end;
 
+    @media (max-width: 480px){
+      display: none;
+      background: #0b7bc0;
+    }
+  }
   .mainContainer {
-    border: 2px solid;
     height: 30%;
-    display: flex;
+    @include displayFlex(row, center, center);
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
     @media (min-width: 830px) {
       flex-direction: row;
-      width: 80%;
-      margin: 0 auto;
-      justify-content: space-between;
-      align-items: center;
+      justify-content: space-evenly;
     }
+
     h5 {
-      font-size: 16px;
+      font-size: 20px;
       letter-spacing: 1px;
       font-weight: 400;
+      margin-left: 10px;
+      margin-top: 0;
+      margin-bottom: 1.5rem !important;
+    }
+
+    .mainPhoto {
+      height: 350px;
+      width: 350px;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 1;
+      position: relative;
+      max-width: 100%;
+      vertical-align: middle;
+      margin-top: 1.5rem !important;;
+      @include marginBottomMain();
+      @media (max-width: 767px) {
+        height: 280px;
+        width: 280px;
+      }
+    }
+
+    .mainInfo {
+      @include displayFlex(column, center, flex-start);
+      max-width: 400px;
+      @media (max-width: 955px) {
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 34px;
+        margin-left: 10px;
+        @include marginBottomMain();
+        margin-top: 0;
+        @media (max-width: 767px) {
+          font-size: 27px;
+          align-items: center;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        color: #5F6F81;
+        margin-top: 0;
+        margin-left: 10px;
+        @include marginBottomMain();
+        @media (max-width: 955px) {
+          text-align: center;
+        }
+      }
+
+      .mainInfoButtons {
+        margin-left: 10px;
+        @include marginBottomMain();
+
+        .btnLink {
+          background: transparent;
+          color: #222;
+
+          &:link, &:visited, &:hover, &:active {
+            color: inherit;
+            box-shadow: none;
+          }
+
+          &:hover {
+            text-decoration: underline;
+
+          }
+        }
+      }
     }
   }
 }
 
 
-.mainInfo {
-  background-color: lavender;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 300px;
-}
 
-.mainPhoto {
-  background-color: beige;
-  width: 300px;
-  height: 300px;
-
-}
-
-@media (min-width: 480px) {
-  .mainContainer {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 768px) {
-  .mainContainer {
-    flex-direction: row;
-    width: 80%;
-    min-height: 100%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mainInfo {
-    align-items: flex-start;
-  }
-  .mainPhoto {
-    background-color: beige;
-    width: 350px;
-    height: 350px;
-
-  }
-}

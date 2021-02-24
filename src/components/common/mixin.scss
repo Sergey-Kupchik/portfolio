@@ -1,14 +1,19 @@
 @import "./variables";
-@mixin displayFlex ($flexDirection,$justifyContent, $alignItems, ) {
+
+@mixin displayFlex($flexDirection,$justifyContent, $alignItems, ) {
   display: flex;
   flex-direction: $flexDirection;
   justify-content: $justifyContent;
   align-items: $alignItems;
 }
 
-@mixin headingsStyle (){
+@mixin headingsStyle() {
   font-family: 'Poppins', sans-serif;
   letter-spacing: 2px;
   color: $textColorPrimary;
   font-weight: 500;
+}
+
+@mixin marginBottomMain() {
+  margin-bottom: 1.5rem !important;
 }

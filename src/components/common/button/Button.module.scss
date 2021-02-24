@@ -1,0 +1,35 @@
+@import "./../mixin";
+
+@import "./../variables";
+
+.btn {
+  padding: 12px 40px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all 0.5s;
+  letter-spacing: 2px;
+  color: $backgroundColorSecondary;
+  box-shadow: none;
+  text-transform: capitalize;
+  outline: none !important;
+  background-color: $navBar;
+  min-width: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  text-decoration: none;
+  @media (max-width: 767px)  {
+  padding: 9px 10px;
+  font-size: 12px;
+}
+
+  &:hover {
+    box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
+    text-decoration: none
+  }
+
+  &:visited, &:link, &:active {
+    text-decoration: none;
+  }
+
+}
