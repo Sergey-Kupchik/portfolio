@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Skill.module.css';
+import styles from './Skill.module.scss';
 
 
 export type SkillType = {
@@ -21,5 +21,4 @@ export const Skill: React.FC<SkillType> = (props) => {
         </div>
     );
 }
-
 

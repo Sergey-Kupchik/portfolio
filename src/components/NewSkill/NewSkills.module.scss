@@ -1,0 +1,77 @@
+@import "./../common/mixin";
+@import "./../common/variables";
+
+.wrapper {
+  @include wrapperDefault($backgroundColorPrimary);
+  min-height: 70vh;
+  .container {
+    @include containerDefault();
+
+  }
+
+  .sectionInner {
+    @include sectionInnerDefault();
+    min-height: 40vh;
+    background: #8444df url("https://www.beingeorge.com/anj/assets/images/pattern1.png");
+    border-radius: 50px;
+    box-shadow: 0px 14px 28px rgb(134 151 168 / 8%);
+    position: relative;
+    background-position: top left;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    .box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between;
+      padding: 1.5rem;
+
+      @media (min-width: 768px) {
+        padding: 3rem;
+        flex-direction: row;
+      }
+
+
+
+      .block1 {
+        h5 {
+          margin-left: 0;
+          font-size: 20px;
+          font-weight: bold;
+          color: $backgroundColorPrimary;
+        }
+      }
+
+      .block2 {
+
+        @media (min-width: 768px) {
+          width: 75%;
+          margin:-10px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row-reverse;
+        }
+      }
+    }
+    .boxTop {
+      padding-bottom: 0;
+      @media (min-width: 768px) {
+        padding-bottom: 0;
+      }
+    }
+    .boxBottom{
+      padding-top: 0;
+      @media (min-width: 768px) {
+        padding-top: 3rem;
+      }
+    }
+  }
+}
+
+
+
+
+

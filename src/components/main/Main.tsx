@@ -3,6 +3,7 @@ import styles from './Main.module.scss';
 import buttonStyle from './../common/button/Button.module.scss';
 import userPhoto from '../common/image/user.jpg';
 import {Button} from '../common/button/Button';
+import {ScrollDown} from './scrollDown/scrollDown';
 
 type MainPropsType = {}
 
@@ -17,15 +18,13 @@ export const Main = (props: MainPropsType) => {
                     <h1>I'M <span>SERGEY KUPCHIK</span></h1>
                     <p>Passionate designer & developer who loves simplicity
                         in things and crafts beautiful user interfaces with love.</p>
-                    <div className={styles.mainInfoButtons}><Button text={"Hire Me"} href={""}/>
-                        <a target="_blank" href="https://linkedin.com/" className={`${buttonStyle.btn} ${styles.btnLink}`}>Download CV</a>
+                    <div className={styles.mainInfoButtons}><Button text={'Hire Me'} href={''}/>
+                        <a target="_blank" href="https://linkedin.com/"
+                           className={`${buttonStyle.btn} ${styles.btnLink}`}>Download CV</a>
                     </div>
                 </div>
             </div>
-            <div className={styles.mouseWrap}>
-                <div className={styles.mouse}></div>
-                <p>Scroll Down</p>
-            </div>
+            <ScrollDown/>
         </div>
     );
 }

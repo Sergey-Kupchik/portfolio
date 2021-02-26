@@ -1,0 +1,72 @@
+@import "./../common/mixin";
+@import "./../common/variables";
+
+.wrapper {
+  @include wrapperDefault($backgroundColorPrimary);
+
+  .container {
+    @include containerDefault();
+
+  }
+
+  .sectionInner {
+    @include sectionInnerDefault();
+    background-color: $backgroundColorSecondary;
+    border-radius: 50px;
+    box-shadow: 0px 14px 28px rgb(134 151 168 / 8%);
+
+    .box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      justify-content: space-between;
+      padding: 1.5rem;
+      .myWorksList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+      }
+
+      @media (min-width: 768px) {
+        padding: 3rem;
+        flex-direction: row;
+      }
+
+
+
+      .block1 {
+        h5 {
+          margin-left: 0;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+
+      .block2 {
+        @media (min-width: 768px) {
+          width: 75%;
+        }
+      }
+    }
+    .boxTop {
+      padding-bottom: 0;
+      @media (min-width: 768px) {
+        padding-bottom: 0;
+      }
+    }
+    .boxBottom{
+      padding-top: 0;
+      @media (min-width: 768px) {
+        padding-top: 3rem;
+      }
+    }
+  }
+}
+
+
+
+
+

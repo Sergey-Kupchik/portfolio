@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MyWorks.module.css';
-import {MyWork, MyWorkType} from './myWork/MyWork';
+import {MyWork, MyWorkType} from '../newWorks/myWork/MyWork';
 
 
 

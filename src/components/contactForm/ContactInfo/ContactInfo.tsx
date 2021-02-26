@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ContactInfo.module.css';
+import styles from './ContactInfo.module.scss';
 import {FaWhatsapp} from 'react-icons/fa';
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineCompass } from "react-icons/ai";
@@ -23,7 +23,7 @@ export const ContactInfo: React.FC<ContactInfoType> = (props) => {
 
             </div>
             <div className={styles.info}>
-                <h3>{props.data}</h3>
+                <h5>{props.data}</h5>
                 <span>{props.description}</span>
             </div>
         </div>

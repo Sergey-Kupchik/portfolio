@@ -1,0 +1,35 @@
+
+.skillContainer {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.skillLogo img {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+}
+
+.skillInfo {
+  background-color: cornsilk;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skillInfo span {
+  text-align: center;
+  margin: 0 3px;
+}
+
+
+@media (min-width: 768px) {
+  .skillContainer {
+    max-width: 300px;
+    margin: 8px;
+  }
+}

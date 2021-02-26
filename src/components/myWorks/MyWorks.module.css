@@ -1,7 +1,6 @@
 
 .wrapper {
     min-height: 100vh;
-    background-color: wheat;
     display: flex;
     justify-content: center;
     align-items: center;

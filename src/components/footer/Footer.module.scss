@@ -1,0 +1,39 @@
+@import "./../common/mixin";
+@import "./../common/variables";
+
+.footer {
+    display: flex;
+    height: 66px;
+    background-color: $navBar;
+    justify-content: center;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    .nav {
+        margin: 0;
+        width: 40vw;
+        display: flex;
+        justify-content: space-evenly;
+        @media (min-width: 768px) {
+            width: 20vw;
+        }
+        a {
+            margin: 0;
+            padding: 0;
+        }
+    }
+    p {
+        font-size: 12px;
+        margin: 3px;
+        letter-spacing: 1px;
+        color: $backgroundColorSecondary;
+    }
+}
+
+

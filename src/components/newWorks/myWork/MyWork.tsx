@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './MyWork.module.css';
+import styles from './MyWork.module.scss';
 
 
 export type MyWorkType = {
@@ -10,13 +10,19 @@ export type MyWorkType = {
 }
 
 export const MyWork: React.FC<MyWorkType> = (props) => {
+    const divStyle = {
+        backgroundImage: 'url(' + props.logo + ')',
+
+
+};
+
     return (
         <div className={styles.myWorkContainer}>
-            <div className={styles.myWorkLogo}>
-                <a href={props.link} target="_blank">{props.name}</a>
+            <div className={styles.myWorkLogo} style={divStyle}>
+                <a href={props.link} target="_blank">View</a>
             </div>
             <div className={styles.myWorkInfo}>
-                <h3>{props.name}</h3>
+                <h5>{props.name}</h5>
                 <span>{props.description}</span>
             </div>
         </div>

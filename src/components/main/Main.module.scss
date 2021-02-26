@@ -6,14 +6,7 @@
   background-color: $backgroundColorPrimary;
   @include displayFlex(row, center, center);
   flex-wrap: wrap;
-  .mouseWrap {
-    align-self: flex-end;
 
-    @media (max-width: 480px){
-      display: none;
-      background: #0b7bc0;
-    }
-  }
   .mainContainer {
     height: 30%;
     @include displayFlex(row, center, center);

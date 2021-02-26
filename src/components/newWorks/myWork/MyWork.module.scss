@@ -1,0 +1,133 @@
+
+.myWorkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 8px 0;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0px 14px 28px rgb(134 151 168 / 8%);
+  @media (min-width: 768px) {
+    max-width: 300px;
+    margin: 8px;
+    .myWorkLogo {
+      a {
+        display: none;
+        h5{
+          color: transparent;
+
+        }
+      }
+    }
+  }
+
+  .myWorkLogo {
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &:hover {
+      @media (min-width: 768px) {
+        &::before {
+          content: "";
+          position: absolute;
+          background-color: black;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0.3;
+          border-radius: 15px;
+        }
+      }
+    }
+
+
+    a {
+      font-size: 150%;
+      text-decoration: none;
+      position: relative;
+      z-index: 999;
+      color: transparent;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      @media (min-width: 768px) {
+        &:hover {
+          color: white;
+          font-size: 150%;
+          display: block;
+          text-decoration: none;
+        }
+      }
+
+      &:hover {
+        color: white;
+        font-size: 150%;
+
+        p {
+          display: block;
+          color: transparent;
+        }
+      }
+
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .myWorkInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h5 {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    span {
+      font-size: 16px;
+      text-align: justify;
+      margin: 8px;
+
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .myWorkContainer {
+    max-width: 300px;
+    margin: 8px;
+  }
+  .myWorkLogo a {
+    display: none;
+  }
+
+  .myWorkLogo:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.2)), url('https://assets-eu-1.generation-y.net/M4FZ0R07z1x6oSuI-D9WQn5b60M=/350x300/assets-generation-y.s3.amazonaws.com/pinewood/uploads/asset/data/1832/IMG_8038.jpg')
+  }
+
+  .myWorkLogo:hover a {
+    color: white;
+    font-size: 150%;
+    display: block;
+    text-decoration: none;
+  }
+
+}
