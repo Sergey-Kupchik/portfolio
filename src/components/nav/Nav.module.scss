@@ -33,11 +33,14 @@
     @media (min-width: 480px) {
       font-size: 16px;
       letter-spacing: 2px;
-      padding: 10px 15px;
+      padding: 5px 15px;
     }
   }
 }
 
-
+.active{
+  color: $backgroundColorSecondary;
+  background: rgba(255,255,255,.2);
+}
 
 

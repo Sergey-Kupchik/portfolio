@@ -31,7 +31,7 @@ export const NewWorks:React.FunctionComponent = () => {
     ]
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id={"projects"}>
             <div className={styles.container}>
                 <SectionHead description={"Recent works"} title={"Portfolio"}/>
                 <div className={styles.sectionInner}>

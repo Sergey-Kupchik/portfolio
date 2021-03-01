@@ -15,17 +15,17 @@ export const NewContactForm = () => {
         },
         {
             type: 'email',
-            data: 'kupchikrabota@gmail.com',
+            data: 'sergekupchik@gmail.com',
             description: 'Email me'
         },
         {
             type: 'address',
-            data: 'Orlando, FL 32829',
+            data: 'Orlando, FL',
             description: 'Address'
         },
     ]
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper } id={'contact'}>
             <div className={styles.container}>
                 <SectionHead description={'SAY HELLO'} title={'CONTACT'}/>
                 <div className={styles.sectionInner}>
@@ -41,23 +41,23 @@ export const NewContactForm = () => {
                             })}
                         </div>
                     </div>
-                    <div className={`${styles.box} ${styles.boxBottom}`}>
-                        <div className={styles.block1}>
-                            <h5>Contact Form</h5>
-                        </div>
-                        <div className={styles.block3}>
-                            <form action=""><input type="email" id="email" name="name"
-                                                   placeholder={'Your email'} className={styles.email}/>
-                                <input type="text" id={'name'} name="name" placeholder={'Your name'}
-                                       className={styles.name}/>
+                    {/*<div className={`${styles.box} ${styles.boxBottom}`}>*/}
+                    {/*    <div className={styles.block1}>*/}
+                    {/*        <h5>Contact Form</h5>*/}
+                    {/*    </div>*/}
+                    {/*    <div className={styles.block3}>*/}
+                    {/*        <form action=""><input type="email" id="email" name="name"*/}
+                    {/*                               placeholder={'Your email'} className={styles.email}/>*/}
+                    {/*            <input type="text" id={'name'} name="name" placeholder={'Your name'}*/}
+                    {/*                   className={styles.name}/>*/}
 
-                                <textarea id="message" name="message"
-                                          placeholder={'Your message...'}
-                                          className={styles.message}/>
-                                <input type="submit" value="Submit" className={styles.submit}/>
-                            </form>
-                        </div>
-                    </div>
+                    {/*            <textarea id="message" name="message"*/}
+                    {/*                      placeholder={'Your message...'}*/}
+                    {/*                      className={styles.message}/>*/}
+                    {/*            <input type="submit" value="Submit" className={styles.submit}/>*/}
+                    {/*        </form>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
 
                 </div>
             </div>

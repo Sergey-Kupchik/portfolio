@@ -8,7 +8,7 @@ import {Resume} from './resume/Resume';
 
 export const MyExpertises:React.FunctionComponent = () => {
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id={'about'}>
             <div className={styles.container}>
                 <SectionHead description={"MY RESUME"} title={"MY EXPERTISES"}/>
                 <div className={styles.sectionInner}>

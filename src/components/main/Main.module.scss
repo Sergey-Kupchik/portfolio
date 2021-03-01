@@ -2,14 +2,14 @@
 @import "./../common/variables";
 
 .wrapper {
-  min-height: calc(100vh - 60px);;
+  min-height: calc(100vh - 50px);;
   background-color: $backgroundColorPrimary;
   @include displayFlex(row, center, center);
   flex-wrap: wrap;
 
   .particles {
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -59,15 +59,20 @@
       @media (max-width: 955px) {
         align-items: center;
       }
+      @media (min-width: 768px) {
+        flex: 0 0 40%;
+        max-width: 40%;      }
 
-      h1 {
+      h1, .mainName {
         font-size: 34px;
         margin-left: 10px;
         @include marginBottomMain();
         margin-top: 0;
         @media (max-width: 767px) {
-          font-size: 27px;
+          font-size: 26px;
           align-items: center;
+          letter-spacing: 0;
+
         }
       }
 
@@ -88,7 +93,8 @@
 
         .btnLink {
           background: transparent;
-          color: #222;
+          color: #8444df !important;
+          font-weight: 600;
 
           &:link, &:visited, &:hover, &:active {
             color: inherit;

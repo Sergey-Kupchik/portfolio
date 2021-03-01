@@ -22,7 +22,7 @@ export const ContactForm = () => {
         },
     ]
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} id={'contact'}>
             <div className={styles.container}>
                 <div className={styles.head}>
                     <h2>Contact</h2>
