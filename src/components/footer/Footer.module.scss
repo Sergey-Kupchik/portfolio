@@ -15,16 +15,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     align-self: flex-end;
-    margin-bottom: 3.5rem;
     .nav {
         margin: 0;
-        width: 40vw;
+        width: 30vw;
         display: flex;
         justify-content: space-evenly;
         @media (min-width: 768px) {
-            width: 20vw;
+            width: 15vw;
         }
         a {
             margin: 0;

@@ -1,9 +1,8 @@
 import React from 'react';
-import styles from './Footer.module.css';
+import styles from './Footer.module.scss';
 import {
     AiOutlineGithub,
     AiFillLinkedin,
-    AiFillFacebook,
 } from 'react-icons/ai';
 
 
@@ -21,7 +20,6 @@ const NavFooter = () => {
         <div className={styles.nav}>
             <a href=""><AiOutlineGithub size={"1.3rem"} color={"white"}/></a>
             <a href=""> <AiFillLinkedin size={"1.3rem"} color={"white"}/></a>
-            <a href=""><AiFillFacebook size={"1.3rem"} color={"white"}/></a>
         </div>
             <p>2021 | All Right Reserved</p>
     </div>

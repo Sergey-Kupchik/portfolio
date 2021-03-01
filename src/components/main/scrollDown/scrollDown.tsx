@@ -5,8 +5,9 @@ export const ScrollDown = () => {
     return (
         <div className={styles.mouseWrap}>
             <div className={styles.mouse}>
-                <p>Scroll Down</p>
             </div>
+            <p>Scroll Down</p>
+
         </div>
 
     );

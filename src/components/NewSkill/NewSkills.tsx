@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './NewSkills.module.scss';
 import {SectionHead} from '../common/sectionHead/SectionHead';
 import {SkillNew} from './SkillNew/SkillNew';
-
+import Pulse from 'react-reveal/Pulse';
 
 export const NewSkills:React.FunctionComponent = () => {
 
@@ -17,14 +17,8 @@ export const NewSkills:React.FunctionComponent = () => {
                             <h5>My Skills</h5>
                         </div>
                         <div className={styles.block2}>
-                           <SkillNew name={"HTML"} progress={40}/>
-                           <SkillNew name={"JS"} progress={80}/>
-                           <SkillNew name={"JS"} progress={80}/>
-                           <SkillNew name={"JS"} progress={80}/>
-                           <SkillNew name={"JS"} progress={80}/>
-                           <SkillNew name={"JS"} progress={80}/>
-                           <SkillNew name={"JS"} progress={80}/>
-                           <SkillNew name={"JS"} progress={80}/>
+                            <Pulse> <SkillNew name={"HTML"} progress={40}/>        </Pulse>
+
                         </div>
                     </div>
                 </div>

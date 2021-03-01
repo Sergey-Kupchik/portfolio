@@ -6,9 +6,10 @@
   background-color: $backgroundColorPrimary;
   @include displayFlex(row, center, center);
   flex-wrap: wrap;
-  .particles{
+
+  .particles {
     position: absolute;
-    top:60px;
+    top: 60px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -19,6 +20,8 @@
     @include displayFlex(row, center, center);
     flex-wrap: wrap;
     width: 100%;
+    align-self: flex-end;
+
     @media (min-width: 830px) {
       flex-direction: row;
       justify-content: space-evenly;
