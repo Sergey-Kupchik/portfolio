@@ -4,7 +4,6 @@
 
   display: flex;
   width: 100vw;
-
   align-items: center;
   justify-content: space-around;
   @media (min-width: 570px) {
@@ -14,6 +13,7 @@
   }
 
   a {
+    cursor: pointer;
     font: 400 14px/1.8 'Poppins', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;

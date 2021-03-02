@@ -34,7 +34,6 @@ export const Main = (props: MainPropsType) => {
                     </div>
                 </div>
             </div>
-            <ScrollDown/>
         </div>
     );
 }

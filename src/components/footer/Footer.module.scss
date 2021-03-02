@@ -2,40 +2,50 @@
 @import "./../common/variables";
 
 .footer {
-    display: flex;
-    height: 66px;
-    background-color: $navBar;
-    justify-content: center;
+  display: flex;
+  height: 60px;
+  background-color: $navBar;
+  justify-content: center;
 
 }
 
 
-
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-end;
+
+  .nav {
+    margin: 0;
+    width: 20vw;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-self: flex-end;
-    .nav {
-        margin: 0;
-        width: 30vw;
-        display: flex;
-        justify-content: space-evenly;
-        @media (min-width: 768px) {
-            width: 15vw;
-        }
-        a {
-            margin: 0;
-            padding: 0;
-        }
+    justify-content: space-evenly;
+    @media (min-width: 768px) {
+      width: 15vw;
     }
-    p {
-        font-size: 12px;
-        margin: 3px;
-        margin-top: px;
-        letter-spacing: 1px;
-        color: $backgroundColorSecondary;
+
+    a {
+      margin: 0;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+
+      svg {
+        width: 100%;
+        height: 100%;
+        color: $backgroundColorPrimary;
+      }
     }
+  }
+
+  p {
+    font-size: 10px;
+    margin: 0;
+    padding: 2px 0;
+    letter-spacing: 1px;
+    color: $backgroundColorPrimary;
+  }
 }
 
 

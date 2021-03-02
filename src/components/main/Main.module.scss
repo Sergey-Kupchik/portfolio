@@ -20,8 +20,6 @@
     @include displayFlex(row, center, center);
     flex-wrap: wrap;
     width: 100%;
-    align-self: flex-end;
-
     @media (min-width: 830px) {
       flex-direction: row;
       justify-content: space-evenly;
@@ -33,7 +31,6 @@
       font-weight: 400;
       margin-left: 10px;
       margin-top: 0;
-      margin-bottom: 1.5rem !important;
     }
 
     .mainPhoto {
@@ -45,7 +42,7 @@
       position: relative;
       max-width: 100%;
       vertical-align: middle;
-      margin-top: 1.5rem !important;;
+      margin-top: 1.5rem ;
       @include marginBottomMain();
       @media (max-width: 767px) {
         height: 280px;
@@ -88,8 +85,7 @@
       }
 
       .mainInfoButtons {
-        margin-left: 10px;
-        @include marginBottomMain();
+        margin: 0 0 0 10px;
 
         .btnLink {
           background: transparent;

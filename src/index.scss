@@ -12,11 +12,22 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  overflow: overlay;
 }
+body::-webkit-scrollbar {
+  width: 4px;
+  height: 0px;
+  background-color: transparent;
+}
+
 h1, h2, h3, h4, h5, h6{
   @include headingsStyle()
 }
+::-webkit-scrollbar-thumb {
+  background: #8444df;
+  border-radius: 3px;
 
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
