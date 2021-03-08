@@ -8,12 +8,12 @@ export type SkillType = {
 }
 
 export const SkillNew: React.FC<SkillType> = (props) => {
-    const progressClass =props.progress
+   const name = props.name
     return (
 
             <div className={styles.fadeInUp}>
                 <Fade>
-                    <h5>{props.name}</h5>
+                    <h5>{name}</h5>
                     <div className={styles.progress}>
                         <div className={styles.progressBar}></div>
                     </div>

@@ -13,7 +13,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    color:  $backgroundColorPrimary;
+    color: $backgroundColorPrimary;
   }
 
   .progress {
@@ -24,16 +24,74 @@
       height: 5px;
       width: 100%;
       padding: 0px;
-
       &::after {
         content: '';
         display: block;
         background: $backgroundColorSecondary;
-        width: 80%;
         height: 100%;
         border-radius: 9px;
       }
     }
+
+    .react {
+      background: #bababa;
+      border-radius: 13px;
+      height: 5px;
+      width: 100%;
+      padding: 0px;
+      &::after {
+        width: 86%;
+        content: '';
+        display: block;
+        background: $backgroundColorSecondary;
+        height: 100%;
+        border-radius: 9px;
+      }
+    }
+
+    .redux {
+      &::after {
+        width: 82%;
+      }
+    }
+
+    .SASS {
+      &::after {
+        width: 80%;
+      }
+    }
+
+    .TypeScript {
+      &::after {
+        width: 90%;
+      }
+    }
+
+    .JavaScript {
+      &::after {
+        width: 93%;
+      }
+    }
+
+    .Jest {
+      &::after {
+        width: 84%;
+      }
+    }
+
+    .HTML {
+      &::after {
+        width: 91%;
+      }
+    }
+
+    .Ajax {
+      &::after {
+        width: 86%;
+      }
+    }
+
+
   }
 }
 

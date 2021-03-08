@@ -17,14 +17,8 @@ export const NewWorks:React.FunctionComponent = () => {
             link: "https://www.facebook.com/",
         },
         {
-            name: 'No social media',
+            name: 'To do list',
             logo:img2,
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam architecto atque illo sapiente totam!',
-            link: "https://www.facebook.com/",
-        },
-        {
-            name: 'Definitely no social media',
-            logo: img3,
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam architecto atque illo sapiente totam!',
             link: "https://www.facebook.com/",
         },

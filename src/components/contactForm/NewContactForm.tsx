@@ -4,6 +4,7 @@ import {ContactInfo, ContactInfoType} from './ContactInfo/ContactInfo';
 import {SectionHead} from '../common/sectionHead/SectionHead';
 import {Resume} from '../myExpertises/resume/Resume';
 import {Button} from '../common/button/Button';
+import {SendForm} from './Form/SendForm';
 
 
 export const NewContactForm = () => {
@@ -41,23 +42,27 @@ export const NewContactForm = () => {
                             })}
                         </div>
                     </div>
-                    {/*<div className={`${styles.box} ${styles.boxBottom}`}>*/}
-                    {/*    <div className={styles.block1}>*/}
-                    {/*        <h5>Contact Form</h5>*/}
-                    {/*    </div>*/}
-                    {/*    <div className={styles.block3}>*/}
-                    {/*        <form action=""><input type="email" id="email" name="name"*/}
-                    {/*                               placeholder={'Your email'} className={styles.email}/>*/}
-                    {/*            <input type="text" id={'name'} name="name" placeholder={'Your name'}*/}
-                    {/*                   className={styles.name}/>*/}
+                    <div className={`${styles.box} ${styles.boxBottom}`}>
+                        <div className={styles.block1}>
+                            <h5>Contact Form</h5>
+                        </div>
+                        <div className={styles.block3}>
+                            {/*<form action=""><input type="email" id="email" name="name"*/}
+                            {/*                       placeholder={'Your email'} className={styles.email}/>*/}
+                            {/*    <input type="text" id={'name'} name="name" placeholder={'Your name'}*/}
+                            {/*           className={styles.name}/>*/}
 
-                    {/*            <textarea id="message" name="message"*/}
-                    {/*                      placeholder={'Your message...'}*/}
-                    {/*                      className={styles.message}/>*/}
-                    {/*            <input type="submit" value="Submit" className={styles.submit}/>*/}
-                    {/*        </form>*/}
-                    {/*    </div>*/}
-                    {/*</div>*/}
+                            {/*    <textarea id="message" name="message"*/}
+                            {/*              placeholder={'Your message...'}*/}
+                            {/*              className={styles.message}/>*/}
+                            {/*    <input type="submit" value="Submit" className={styles.submit}/>*/}
+                            {/*</form>*/}
+
+<SendForm/>
+
+
+                        </div>
+                    </div>
 
                 </div>
             </div>
