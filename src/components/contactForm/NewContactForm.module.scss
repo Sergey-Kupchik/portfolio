@@ -40,7 +40,10 @@
       }
 
       .block2 {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
         @media (min-width: 768px) {
           width: 75%;
         }

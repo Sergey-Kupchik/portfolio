@@ -25,10 +25,12 @@ form {
     text-transform: capitalize;
     outline: none !important;
     background-color: $navBar;
+    cursor: pointer;
     min-width: 140px;
     position: relative;
     overflow: hidden;
     border-radius: 40px;
+    border-color: transparent;
     align-self: center;
     font: 400 12px/1.8 "Poppins", sans-serif;
     &:hover{ box-shadow: 0 14px 28px rgb(0 0 0 / 20%);}

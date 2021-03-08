@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Nav.module.scss';
-import {Link, animateScroll as scroll} from 'react-scroll';
+import {Link} from 'react-scroll';
 
 type NavPropsType = {}
 
@@ -44,7 +44,7 @@ export const Nav = (props: NavPropsType) => {
             to="contact"
             spy={true}
             smooth={true}
-            offset={1}
+            offset={70}
             duration={500}
         >CONTACT</Link>
         </div>

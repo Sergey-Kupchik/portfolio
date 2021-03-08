@@ -9,7 +9,18 @@ type ButtonPropsType = {
 
 export const Button:React.FunctionComponent<ButtonPropsType> = (props) => {
     return (
-        <a href={props.href} className={styles.btn}>{props.text}</a>
+
+
+        <Link
+            activeClass={styles.active}
+            to={"contact"}
+            spy={true}
+            smooth={true}
+            offset={70}
+            duration={500}
+            className={styles.btn}
+        >{props.text}</Link>
+
     );
 }
 
