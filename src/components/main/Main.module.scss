@@ -6,16 +6,17 @@
   background-color: $backgroundColorPrimary;
   @include displayFlex(row, center, center);
   flex-wrap: wrap;
-
+  position: relative;
+  @media (max-width: 480px) {
+    top: 54px;
+  }
   .particles {
     position: absolute;
-    top: 74px;
+    top:0px;
     left: 0;
     bottom: 0;
     right: 0;
-    @media (max-width: 480px) {
-      top: 54px;
-    }
+
   }
 
   .mainContainer {

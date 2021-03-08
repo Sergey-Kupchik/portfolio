@@ -19,8 +19,7 @@ export const BurgerNav = (props: NavPropsType) => {
                     smooth={true}
                     offset={1}
                     duration={500}
-                >HOME</Link>
-                <Link
+                >HOME</Link><Link
                     activeClass={styles.active}
                     to="about"
                     spy={true}
