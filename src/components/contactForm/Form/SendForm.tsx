@@ -1,10 +1,24 @@
-import React from 'react';
+import React, {FormEvent} from 'react';
 import {useFormik} from 'formik';
-
+import emailjs from 'emailjs-com';
 import styles from './SendForm.module.scss';
 
 export const SendForm: React.FunctionComponent = () => {
 
+
+    function sendEmail(e:FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        // @ts-ignore
+        emailjs.sendForm('service_gtsu5c6', 'template_piexz0c', e.target,
+            'user_AopmWbAxt55tMqUFEvu0j')
+            .then((result) => {
+                debugger
+                console.log(result.text);
+            }, (error) => {
+                debugger
+                console.log(error.text);
+            });
+    }
 
     const validate = (values: ValuesType) => {
         //@ts-ignore

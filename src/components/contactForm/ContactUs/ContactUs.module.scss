@@ -1,0 +1,84 @@
+@import "./../../common/mixin";
+@import "./../../common/variables";
+form {
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: 768px) {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin: -10px;
+  }
+  label{
+    display: none;
+  }
+  .submit {
+    padding: 9px 10px;
+    flex: 0 0 15%;
+    transition: all 0.5s;
+    letter-spacing: 2px;
+    color: $backgroundColorSecondary;
+    box-shadow: none;
+    text-transform: capitalize;
+    outline: none !important;
+    background-color: $navBar;
+    cursor: pointer;
+    min-width: 140px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+    border-color: transparent;
+    align-self: center;
+    font: 400 12px/1.8 "Poppins", sans-serif;
+    &:hover{ box-shadow: 0 14px 28px rgb(0 0 0 / 20%);}
+    @media (min-width: 768px) {
+      align-self: center;
+      padding: 12px 40px;
+      font-size: 14px;
+    }
+  }
+
+  input {
+    flex: 1 1 40%;
+    margin: 10px 0;
+    padding: 11px 20px;
+    height: auto;
+    border-radius: 0;
+    overflow: hidden;
+    border: 1px solid #eee;
+    font: 400 14px/1.8 "Poppins", sans-serif;
+    box-shadow: 0px 14px 28px rgb(134 151 168 / 8%);
+    @media (min-width: 768px) {
+      margin: 10px;
+    }
+    &:focus {
+      border-color: $navBar;
+      outline: 0;
+    }
+  }
+  textarea {
+    margin: 10px 0;
+    flex: 1 1 100%;
+    resize: none;
+    height: 8vh;
+    padding: 11px 20px;
+    border-radius: 0;
+    font: 400 14px/1.8 "Poppins", sans-serif;
+    overflow: hidden;
+    box-shadow: 0px 14px 28px rgb(134 151 168 / 8%);
+    border: 1px solid #eee;
+    @media (min-width: 768px) {
+      margin: 10px;
+    }
+    &:focus {
+      color: #495057;
+      border-color: $navBar;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    }
+  }
+
+}

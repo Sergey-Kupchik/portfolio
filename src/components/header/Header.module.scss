@@ -2,19 +2,21 @@
 
 .header {
   display: flex;
-  height: 50px;
   background-color: #8444df;
   justify-content: center;
-  align-items: center;
   padding: 12px 0;
+  min-height: 30px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1040;
+  border-bottom: 1px solid $backgroundColorPrimary;
+  position: fixed;
   @media (min-width: 480px) {
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1040;
-    border-bottom: 1px solid $backgroundColorPrimary;
+    align-items: center;
+    height: 50px;
+
   }
 
   .avatarDetails {

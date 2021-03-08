@@ -5,9 +5,12 @@ import {SectionHead} from '../common/sectionHead/SectionHead';
 import {Resume} from '../myExpertises/resume/Resume';
 import {Button} from '../common/button/Button';
 import {SendForm} from './Form/SendForm';
+import ContactUs from './ContactUs/ContactUs';
 
-
-export const NewContactForm = () => {
+export type NewContactFormPropsType={
+    setPreloader:(preloaderCondition:boolean)=>void
+}
+export const NewContactForm = (props: NewContactFormPropsType) => {
     const contactInfoState: Array<ContactInfoType> = [
         {
             type: 'phone',
@@ -47,7 +50,7 @@ export const NewContactForm = () => {
                             <h5>Contact Form</h5>
                         </div>
                         <div className={styles.block3}>
-                            <SendForm/>
+                            <ContactUs setPreloader={props.setPreloader}/>
                         </div>
                     </div>
 

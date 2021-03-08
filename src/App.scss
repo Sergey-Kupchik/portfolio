@@ -1,0 +1,19 @@
+
+.App {
+  .preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
+
+
+    div:first-child{
+      background-color: transparent;;
+    }
+    div:nth-child(2){
+      background-color: #ea8de5;
+    }
+
+  }
+}

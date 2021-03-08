@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React, {useState} from 'react';
+import './App.scss';
 import {Header} from './components/header/Header';
 import {Main} from './components/main/Main';
 import {MySkills} from './components/skills/MySkills';
@@ -10,16 +10,34 @@ import {MyExpertises} from './components/myExpertises/MyExpertises';
 import {NewSkills} from './components/NewSkill/NewSkills';
 import {NewWorks} from './components/newWorks/NewWorks';
 import {NewContactForm} from './components/contactForm/NewContactForm';
+import Preloader from './components/common/image/Preloader.gif';
+import {makeStyles} from '@material-ui/core/styles';
+import LinearProgress from '@material-ui/core/LinearProgress';
 
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+        width: '100%',
+        '& > * + *': {
+            marginTop: theme.spacing(2),
+        },
+    },
+}));
 function App() {
+    let [preloader,setPreloader] = useState(false)
+    const callBack =(preloaderCondition:boolean)=>{
+        setPreloader(preloaderCondition)
+    }
+    const classes = useStyles();
     return (
         <div className="App">
-            <Header/>
+            <Header />
+            {preloader && <div className={`${classes.root} preloader`}><LinearProgress color="secondary" /></div>}
             <Main/>
             <MyExpertises/>
             <NewSkills/>
             <NewWorks/>
-            <NewContactForm/>
+            <NewContactForm setPreloader={callBack}/>
             <Footer/>
         </div>
     );
