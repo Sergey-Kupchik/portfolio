@@ -19,7 +19,7 @@ export const MyWork: React.FC<MyWorkType> = (props) => {
     return (
         <div className={styles.myWorkContainer}>
             <div className={styles.myWorkLogo} style={divStyle}>
-                <a href={props.link} target="_blank">View</a>
+                <a href={props.link} target="_blank">View code</a>
             </div>
             <div className={styles.myWorkInfo}>
                 <h5>{props.name}</h5>
