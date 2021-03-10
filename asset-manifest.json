@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.75607141.chunk.css",
-    "main.js": "/portfolio/static/js/main.21c9886e.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.21c9886e.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.9ba5d997.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9ba5d997.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.cff0f78a.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.cff0f78a.js.map",
     "static/js/2.2499c4b4.chunk.js": "/portfolio/static/js/2.2499c4b4.chunk.js",
@@ -12,14 +12,14 @@
     "index.html": "/portfolio/index.html",
     "static/css/main.75607141.chunk.css.map": "/portfolio/static/css/main.75607141.chunk.css.map",
     "static/js/2.2499c4b4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.2499c4b4.chunk.js.LICENSE.txt",
-    "static/media/turbopar1.be658d8a.png": "/portfolio/static/media/turbopar1.be658d8a.png",
-    "static/media/turbopar2.ea969730.png": "/portfolio/static/media/turbopar2.ea969730.png",
+    "static/media/sn.13885d7d.png": "/portfolio/static/media/sn.13885d7d.png",
+    "static/media/todo.0f644097.png": "/portfolio/static/media/todo.0f644097.png",
     "static/media/user.aa340b0d.jpg": "/portfolio/static/media/user.aa340b0d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.cff0f78a.js",
     "static/js/2.2499c4b4.chunk.js",
     "static/css/main.75607141.chunk.css",
-    "static/js/main.21c9886e.chunk.js"
+    "static/js/main.9ba5d997.chunk.js"
   ]
 }
