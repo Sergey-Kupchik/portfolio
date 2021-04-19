@@ -17,7 +17,17 @@ export const MyExpertises:React.FunctionComponent = () => {
                             <h5>My Experience</h5>
                         </div>
                         <div className={styles.block2}>
-                            <Resume description={"The project includes developing an internal application with the React and Redux frameworks with TypeScript. Responsible for designing and developing interactive UI pages with HTML5, CSS3, SASS and AJAX.Used AJAX & JSON communication against Restful web services. Managed application state using Redux and React.useState Hook. Created small react components to avoid the code redundancy. Implemented single page apps by using routing of React to take the user to various views.Developed the various screens and its architecture in accordance to UI Specs. Wrote extensive JavaScript, HTML and SASS/CSS build dynamic pages using Webstorm.Implemented Jest and Storybook frameworks for unit testing the application. Fixed bugs related to side effects (used React.memo, useCallback, useEffect)."} position={"Front-end Developer"} company={"Turbopar Engineering Design Inc. "} period={"May 2020 - Present "}status={'New'}/>
+                            <Resume description={"Developing SPA application for its domestic and international clients.\n" +
+                            "The project includes developing an internal application with the React and Redux frameworks with TypeScript.\n" +
+                            "Responsible for designing and developing interactive UI pages with HTML5, CSS3, SASS and AJAX.\n" +
+                            "Used AJAX & JSON communication against Restful web services.\n" +
+                            "Responsible for managing the state of applications with popular libraries and internals of React.\n" +
+                            "Implemented Jest and Storybook frameworks for unit testing the application."} position={"Front-end Developer"} company={"BD ApSoft LLP"} period={"Feb 2019 - Present "}status={'New'}/>
+                            <Resume description={"Developed the various screens and its architecture in accordance to UI Specs. \n" +
+                            "Wrote extensive JavaScript, HTML/ HTML5 and CSS3 build dynamic pages using Webstorm. \n" +
+                            "Integrated the React.JS application with the RESTful web services.\n" +
+                            "Developed a fully functional login page for the company’s user facing website with complete UI and validations.\n" +
+                            "Fixed bugs related to side effects (used React.memo, useCallback, useEffect)."} position={"Front-end Developer"} company={"Beatmaker"} period={"Mar 2016 - Feb 2019  "}status={'New'}/>
                         </div>
                     </div>
                     <div className={`${styles.box} ${styles.boxBottom}`}>
@@ -26,7 +36,7 @@ export const MyExpertises:React.FunctionComponent = () => {
                             </h5>
                         </div>
                         <div className={styles.block2}>
-                            <Resume position={"Front-End Developer"} company={"Bootcamp (Front-End)"} period={"2019 - 2020"}status={'New'}/><Resume position={"Master of Engineering"} company={"National Technical University (Belarus)"} period={"2009 - 2015"}/>
+                            <Resume position={"Master of Engineering"} company={"National Technical University (Belarus)"} period={"2009 - 2015"}/>
                         </div>
                     </div>
 

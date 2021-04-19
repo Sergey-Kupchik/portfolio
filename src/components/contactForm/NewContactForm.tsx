@@ -19,7 +19,7 @@ export const NewContactForm = (props: NewContactFormPropsType) => {
         },
         {
             type: 'email',
-            data: 'sergekupchik@gmail.com',
+            data: 'sk40786796@gmail.com',
             description: 'Email me'
         },
         {

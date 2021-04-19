@@ -27,7 +27,7 @@ export const Main = (props: MainPropsType) => {
                     <h5>HI THERE !</h5>
 
                     <h1>I'M<ReactTypingEffect className={styles.mainName} text={["FRONT-END DEVELOPER", "SERGEY KUPCHIK"] } eraseSpeed={30} speed={100}  eraseDelay={3000}/></h1>
-                    <p>Front-End developer with experience in creating
+                    <p>Fwith five years of experience in creating
                         SPA using React, Redux, HTML, CSS/SASS, JavaScript, TypeScript.</p>
                     <div className={styles.mainInfoButtons}>
 

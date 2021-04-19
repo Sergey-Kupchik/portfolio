@@ -2,15 +2,11 @@ import React, {useState} from 'react';
 import './App.scss';
 import {Header} from './components/header/Header';
 import {Main} from './components/main/Main';
-import {MySkills} from './components/skills/MySkills';
-import {MyWorks} from './components/myWorks/MyWorks';
-import {ContactForm} from './components/contactForm/ContactForm';
 import {Footer} from './components/footer/Footer';
 import {MyExpertises} from './components/myExpertises/MyExpertises';
 import {NewSkills} from './components/NewSkill/NewSkills';
 import {NewWorks} from './components/newWorks/NewWorks';
 import {NewContactForm} from './components/contactForm/NewContactForm';
-import Preloader from './components/common/image/Preloader.gif';
 import {makeStyles} from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
