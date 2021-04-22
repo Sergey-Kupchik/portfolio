@@ -3,12 +3,9 @@
 
 .wrapper {
   @include wrapperDefault($backgroundColorPrimary);
-
   .container {
     @include containerDefault();
-
   }
-
   .sectionInner {
     @include sectionInnerDefault();
     background-color: $backgroundColorSecondary;
@@ -19,7 +16,6 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-
       justify-content: space-between;
       padding: 1.5rem;
       .myWorksList {
@@ -29,14 +25,10 @@
         align-items: flex-start;
         width: 100%;
       }
-
       @media (min-width: 768px) {
         padding: 3rem;
         flex-direction: row;
       }
-
-
-
       .block1 {
         h5 {
           margin-left: 0;
@@ -44,7 +36,6 @@
           font-weight: bold;
         }
       }
-
       .block2 {
         @media (min-width: 768px) {
           width: 75%;

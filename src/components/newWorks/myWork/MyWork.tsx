@@ -6,6 +6,7 @@ export type MyWorkType = {
     name: string
     logo: string
     description: string
+    tech: string
     link: string
 }
 
@@ -24,6 +25,7 @@ export const MyWork: React.FC<MyWorkType> = (props) => {
             <div className={styles.myWorkInfo}>
                 <h5>{props.name}</h5>
                 <span>{props.description}</span>
+                <span>{props.tech}</span>
             </div>
         </div>
     );

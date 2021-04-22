@@ -30,9 +30,6 @@ export const Main = (props: MainPropsType) => {
                     <p>with five years of experience in creating
                         SPA using React, Redux, HTML, CSS/SASS, JavaScript, TypeScript.</p>
                     <div className={styles.mainInfoButtons}>
-
-
-
                         <Button text={'Hire Me'} href={'#contact'}/>
                         <a target="_blank" href="https://github.com/Sergey-Kupchik"
                            className={`${buttonStyle.btn} ${styles.btnLink}`}>GitHub</a>

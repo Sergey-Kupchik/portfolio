@@ -27,7 +27,7 @@ export const MyExpertises:React.FunctionComponent = () => {
                             "Wrote extensive JavaScript, HTML/ HTML5 and CSS3 build dynamic pages using Webstorm. \n" +
                             "Integrated the React.JS application with the RESTful web services.\n" +
                             "Developed a fully functional login page for the company’s user facing website with complete UI and validations.\n" +
-                            "Fixed bugs related to side effects (used React.memo, useCallback, useEffect)."} position={"Front-end Developer"} company={"Beatmaker"} period={"Mar 2016 - Feb 2019  "}status={'New'}/>
+                            "Fixed bugs related to side effects (used React.memo, useCallback, useEffect)."} position={"Front-end Developer"} company={"Beatmaker.tv"} period={"Mar 2016 - Feb 2019  "}status={'New'}/>
                         </div>
                     </div>
                     <div className={`${styles.box} ${styles.boxBottom}`}>
@@ -36,7 +36,7 @@ export const MyExpertises:React.FunctionComponent = () => {
                             </h5>
                         </div>
                         <div className={styles.block2}>
-                            <Resume position={"Master of Engineering"} company={"National Technical University (Belarus)"} period={"2009 - 2015"}/>
+                            <Resume position={"Master of Engineering"} company={"National Technical University"} period={"2009 - 2015"}/>
                         </div>
                     </div>
 

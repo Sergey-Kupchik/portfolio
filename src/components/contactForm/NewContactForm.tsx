@@ -29,7 +29,7 @@ export const NewContactForm = (props: NewContactFormPropsType) => {
         },
     ]
     return (
-        <div className={styles.wrapper} id={'contact'}>
+        <div className={`${styles.wrapper} ${styles.wrapper2}`} id={'contact'}>
             <div className={styles.container}>
                 <SectionHead description={'SAY HELLO'} title={'CONTACT'}/>
                 <div className={styles.sectionInner}>
